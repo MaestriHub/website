@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+<title>Maestri - Управление Салоном Красоты</title>
+<style>
+body {
+background-color: #333333;
+color: white;
+}
+.gradient {
+background: linear-gradient(to right, #808080, #ffffff);
+}
+.container {
+padding: 20px;
+}
+nav ul li a {
+color: white;
+}
+</style>
+</head>
+<body>
+<nav class="container-fluid">
+<ul>
+<li><strong>Maestri</strong></li>
+</ul>
+<ul>
+<li><a href="#">Главная</a></li>
+<li><a href="#">Функции</a></li>
+<li><a href="#" role="button">Контакты</a></li>
+</ul>
+</nav>
+<main class="container">
+<div class="grid">
+<section>
+<hgroup>
+<h2>Maestri - Ваш помощник в управлении салоном</h2>
+<h3>Эффективность и удобство</h3>
+</hgroup>
+<p>Maestri - это приложение, предназначенное для упрощения управления салонами красоты и работы мастеров. От учета клиентов до управления расписанием - все в одном месте.</p>
+<figure>
+<img src="https://source.unsplash.com/featured/?beauty,salon" alt="Beauty Salon" />
+<figcaption><a href="https://source.unsplash.com/featured/?beauty,salon" target="_blank">Источник изображения</a></figcaption>
+</figure>
+<h3>Интуитивно понятный интерфейс</h3>
+<p>Интерфейс Maestri разработан так, чтобы быть понятным и удобным для каждого пользователя.</p>
+<h3>Мощные функции</h3>
+<p>Множество функций для эффективного управления вашим бизнесом.</p>
+</section>
+</div>
+</main>
+<section aria-label="Subscribe example" class="gradient">
+<div class="container">
+<article>
+<hgroup>
+<h2>Оставайтесь на связи с Maestri</h2>
+<h3>Подписывайтесь на наши новости</h3>
+</hgroup>
+<form class="grid">
+<input type="text" id="firstname" name="firstname" placeholder="Ваше имя" aria-label="Ваше имя" required />
+<input type="email" id="email" name="email" placeholder="Ваш email" aria-label="Ваш email" required />
+<button type="submit" onclick="event.preventDefault()">Подписаться</button>
+</form>
+</article>
+</div>
+</section>
+<footer class="container">
+<small><a href="#">Политика конфиденциальности</a> • <a href="#">Условия использования</a></small>
+</footer>
+</body>
+</html>
