@@ -5,6 +5,8 @@
             "B2Y384F77B.app.maestri": {
                 "paths": [
 		    "/appointments/*",
+	            "/clients/*",
+   		    "/salons/*",
                     "/employees/*"
                 ]
             }
