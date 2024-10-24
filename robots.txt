@@ -1,18 +1,9 @@
-User-Agent: *
-Disallow: /page42009926.html
-Disallow: /tilda/form*
-Disallow: /tilda/rec*
-Disallow: /tilda/click*
-Disallow: /tilda/scroll*
-Disallow: /tilda/popup*
-Disallow: /tilda/cart*
-Disallow: /tilda/product*
-Disallow: /tilda/event*
-Disallow: /*_escaped_fragment_*
-Disallow: /members/login*
-Disallow: /members/signup*
-Disallow:
+# *
+User-agent: *
+Allow: /
 
+# Host
+Host: https://maestri.me
 
-Sitemap: https://maestri.app/sitemap.xml
-Host: https://maestri.app
+# Sitemaps
+Sitemap: https://maestri.me/sitemap.xml
