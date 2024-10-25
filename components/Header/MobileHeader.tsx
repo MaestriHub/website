@@ -18,7 +18,7 @@ const MobileHeader = () => {
     <header className="fixed xl:hidden bg-white dark:bg-dark-bg z-[3000] h-[7vh] w-full items-center gap-x-4 shadow-sm px-[3.5%]">
       <div className="flex w-full items-center h-full">
         <div className="flex h-full w-full md:w-auto  items-center">
-          <Link href={"/en"} className="flex-1 flex">
+          <Link href={"/"} className="flex-1 flex">
             <Image
               src={logo}
               alt={""}
