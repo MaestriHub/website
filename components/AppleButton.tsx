@@ -13,9 +13,9 @@ const AppleButton = () => {
       onClick={() =>
         router.push("https://apps.apple.com/ru/app/maestri/id6469101735")
       }
-      className="mt-[7%] active:scale-105 xl:hover:scale-105 transition-all"
+      className=" active:scale-105 xl:hover:scale-105 transition-all"
     >
-      <Image src={appstore} alt={""}></Image>
+      <Image src={appstore} alt={""} className="h-[50px]"></Image>
     </button>
   )
 }

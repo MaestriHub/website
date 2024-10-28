@@ -15,6 +15,11 @@ import Review from "@/components/reviews/ReviewFabric"
 import AppleButton from "@/components/AppleButton"
 
 import Head from "next/head"
+import PrivacyPolicy from "@/components/Footer/PrivacyPolicy"
+import LicensePolicy from "@/components/Footer/LicensePolicy"
+import Header from "@/components/Header/Header"
+import MobileHeader from "@/components/Header/MobileHeader"
+import Footer from "@/components/Footer/Footer"
 
 const LandingPage = () => {
   return (
@@ -31,15 +36,15 @@ const LandingPage = () => {
               logo: "https://maestri.me/images/tild3031-3665-4331-b066-353633643661__photo.svg",
               sameAs: [
                 "https://www.instagram.com/maestri_app",
-                "https://t.me/maestri_channel"
+                "https://t.me/maestri_channel",
               ],
               contactPoint: {
                 "@type": "ContactPoint",
                 telephone: "+1-818-877-8913",
                 contactType: "Customer Service",
-                areaServed: "US"
-              }
-            })
+                areaServed: "US",
+              },
+            }),
           }}
         />
 
@@ -85,6 +90,10 @@ const LandingPage = () => {
         {/* TwitterCards */}
       </Head>
 
+      <PrivacyPolicy></PrivacyPolicy>
+      <LicensePolicy></LicensePolicy>
+      <Header />
+      <MobileHeader />
       <main className="w-full pt-[10vh] flex flex-col items-center bg-white dark:bg-dark-bg gap-y-[9vh] xl:gap-y-[15vh]">
         <section className="w-full h-[75vh] lg:h-[90vh] items-center justify-center flex px-[3.5%] pb-[5vh]">
           <div className="w-full moving-background relative h-full rounded-[21px] shadow-lg">
@@ -297,7 +306,7 @@ const LandingPage = () => {
                   text="start growing your business today"
                 ></TextFabric>
               </div>
-              <div className="mt-[5%]">
+              <div className="mt-[5%] mb-[5%]">
                 <TextFabric
                   id={2}
                   text="fast implementation - we will help you transfer the necessary data and customize the service for your tasks"
@@ -316,6 +325,7 @@ const LandingPage = () => {
           </div>
         </section>
       </main>
+      <Footer></Footer>
     </>
   )
 }

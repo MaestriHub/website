@@ -4,18 +4,21 @@ const nextConfig = {
   reactStrictMode: true,
   distDir: "dist",
   images: {
-    unoptimized: true
+    unoptimized: true,
   },
-  experimental: {
-    headers() {
-      return [
-        {
-          source: "/apple-app-site-association",
-          headers: [{ key: "content-type", value: "application/json" }]
-        }
-      ]
-    }
-  }
+  async headers() {
+    return [
+      {
+        source: "/apple-app-site-association",
+        headers: [
+          {
+            key: "Content-Type",
+            value: "application/json",
+          },
+        ],
+      },
+    ]
+  },
 }
 
 export default nextConfig

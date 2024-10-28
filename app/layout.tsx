@@ -11,19 +11,19 @@ import { Manrope } from "next/font/google"
 const manrope = Manrope({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  display: "swap"
+  display: "swap",
 })
 
 export const metadata: Metadata = {
   title: "Maestri",
   description: "Automate your business processes",
   icons: {
-    icon: "/images/favicon.png"
-  }
+    icon: "/images/favicon.png",
+  },
 }
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
@@ -38,14 +38,7 @@ export default function RootLayout({
         />
       </head>
       <body className="dark:bg-dark-bg dark:text-dark-text flex flex-col relative">
-        <StoreProvider>
-          <PrivacyPolicy></PrivacyPolicy>
-          <LicensePolicy></LicensePolicy>
-          <Header />
-          <MobileHeader />
-          {children}
-          <Footer></Footer>
-        </StoreProvider>
+        <StoreProvider>{children}</StoreProvider>
       </body>
     </html>
   )
