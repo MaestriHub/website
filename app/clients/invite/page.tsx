@@ -4,14 +4,12 @@ import React, { Suspense } from "react"
 import Image from "next/image"
 import logo from "@/public/images/logo.svg"
 import TextFabric from "@/components/TextFabric"
-import MainPhoneBlock from "@/public/images/MainPhoneBLock2.svg"
-import SecondaryPhoneBlock from "@/public/images/SecondaryPhoneBlock2.svg"
-import SecondaryPhoneBlock2 from "@/public/images/SecondaryPhoneBlock2_2.svg"
 import ThemeSwitcher from "@/components/ThemeSwitcher"
 import InviteButton from "@/components/invite/InviteButton"
 import appstore from "@/public/images/appstore.svg"
 import { useRouter } from "next/navigation"
 
+import phones from "@/public/images/phones_customer.png"
 const ClientInvite = () => {
   const router = useRouter()
 
@@ -45,20 +43,12 @@ const ClientInvite = () => {
 
           <div className="xl:w-[80%] flex xl:hidden xl:w-1/2 xl:h-full  items-center justify-center relative">
             <Image
-              src={MainPhoneBlock}
-              alt={""}
-              className="w-[40vw] xl:w-[16vw] z-[1000]"
-            />
-            <Image
-              src={SecondaryPhoneBlock}
-              alt=""
-              className="w-[25vw] scale-125 xl:scale-100 xl:w-[12vw] absolute left-[5vw]"
-            />
-            <Image
-              src={SecondaryPhoneBlock2}
-              alt=""
-              className="w-[25vw] scale-125 xl:scale-100 xl:w-[12vw] absolute right-[5vw]"
-            />
+              alt="phones"
+              src={phones}
+              width={419}
+              height={389}
+              layout="responsive"
+            ></Image>
           </div>
 
           <div className="flex flex-col gap-2 pb-[5vh] xl:pb-0 items-center text-center xl:items-start xl:text-start ">
@@ -92,22 +82,16 @@ const ClientInvite = () => {
           </div>
         </div>
 
-        <div className="w-[80%] hidden xl:flex xl:w-1/2 xl:h-full  items-center justify-center relative">
-          <Image
-            src={MainPhoneBlock}
-            alt={""}
-            className="w-[40vw] xl:w-[16vw] z-[1000]"
-          />
-          <Image
-            src={SecondaryPhoneBlock}
-            alt=""
-            className="w-[25vw] scale-125 xl:scale-100 xl:w-[12vw] absolute left-[5vw]"
-          />
-          <Image
-            src={SecondaryPhoneBlock2}
-            alt=""
-            className="w-[25vw] scale-125 xl:scale-100 xl:w-[12vw] absolute right-[5vw]"
-          />
+        <div className="w-[80%] hidden xl:flex xl:w-1/2 xl:h-full items-center justify-center relative">
+          <div className="w-[90%]">
+            <Image
+              alt="phones"
+              src={phones}
+              width={419}
+              height={389}
+              layout="responsive"
+            ></Image>
+          </div>
         </div>
       </main>
     </div>

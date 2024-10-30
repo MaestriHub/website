@@ -1,8 +1,8 @@
 "use client"
 import React, { useRef, useEffect } from "react"
 import Image from "next/image"
-import SecondaryPhoneBlock from "@/public/images/SecondaryPhoneBlock2.svg"
-import SecondaryPhoneBlock2 from "@/public/images/SecondaryPhoneBlock2_2.svg"
+import SecondaryPhoneBlock from "@/public/images/SecondaryPhoneBlock2.png"
+import SecondaryPhoneBlock2 from "@/public/images/SecondaryPhoneBlock2_2.png"
 
 const ScrollingImage = () => {
   const ref = useRef<HTMLDivElement>(null)
@@ -29,12 +29,12 @@ const ScrollingImage = () => {
   return (
     <div ref={ref} className="absolute flex justify-between duration-100">
       <Image
-        src={SecondaryPhoneBlock}
+        src={SecondaryPhoneBlock2}
         alt=""
         className="w-[25vw] scale-125 xl:scale-100 xl:w-[12vw]"
       />
       <Image
-        src={SecondaryPhoneBlock2}
+        src={SecondaryPhoneBlock}
         alt=""
         className="w-[25vw] scale-125 xl:scale-100 xl:w-[12vw]"
       />

@@ -2,10 +2,10 @@ import React from "react"
 import Image from "next/image"
 import TextFabric from "../TextFabric"
 
-import first from "@/public/images/1stPerson.svg"
-import second from "@/public/images/2ndPerson.svg"
-import third from "@/public/images/3rdPerson.svg"
-import fourth from "@/public/images/4thPerson.svg"
+import first from "@/public/images/1.png"
+import second from "@/public/images/2.png"
+import third from "@/public/images/3.png"
+import fourth from "@/public/images/4.png"
 
 interface ReviewDataProps {
   id: number
@@ -22,43 +22,43 @@ const PersonImage = ({ id }: PesronImageProps) => {
   switch (id) {
     case 1:
       return (
-        <div className="flex items-center justify-center relative w-[15vw] h-[15vw] xl:w-[5.7vw] xl:h-[5.7vw]">
-          <Image
-            src={first}
-            alt={"1st person"}
-            className="w-full h-full left-[-10%] absolute"
-          ></Image>
-        </div>
+        <Image
+          src={first}
+          alt={"1st person"}
+          width={256}
+          height={256}
+          layout="responsive"
+        ></Image>
       )
     case 2:
       return (
-        <div className="flex items-center justify-center relative w-[16vw] h-[16vw] xl:w-[7vw] xl:h-[7vw]">
-          <Image
-            src={second}
-            alt={"2nd person"}
-            className="w-full h-full absolute"
-          ></Image>
-        </div>
+        <Image
+          src={second}
+          alt={"2nd person"}
+          width={256}
+          height={256}
+          layout="responsive"
+        ></Image>
       )
     case 3:
       return (
-        <div className="flex items-center justify-center relative w-[16vw] h-[16vw] xl:w-[7vw] xl:h-[7vw]">
-          <Image
-            src={third}
-            alt={"3rd person"}
-            className="w-full h-full absolute"
-          ></Image>
-        </div>
+        <Image
+          src={third}
+          alt={"3rd person"}
+          width={256}
+          height={256}
+          layout="responsive"
+        ></Image>
       )
     case 4:
       return (
-        <div className="flex items-center justify-center relative  w-[17vw] h-[17vw] xl:w-[7.5vw] xl:h-[7.5vw]">
-          <Image
-            src={fourth}
-            alt={"4th person"}
-            className="w-full h-full absolute"
-          ></Image>
-        </div>
+        <Image
+          src={fourth}
+          alt={"4th person"}
+          width={256}
+          height={256}
+          layout="responsive"
+        ></Image>
       )
   }
 }
@@ -67,7 +67,9 @@ const Review = ({ id, title, role, description }: ReviewDataProps) => {
   return (
     <div className="w-full xl:w-1/4 p-6 border flex flex-col gap-y-6 rounded-[21px]">
       <div className="flex items-center max-h-[10vh] gap-x-2">
-        <PersonImage id={id} />
+        <div className="flex items-center justify-center relative w-[15vw] h-[15vw] xl:max-w-[6vw] ">
+          <PersonImage id={id} />
+        </div>
 
         <div>
           <TextFabric text={title} id={4}></TextFabric>

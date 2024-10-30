@@ -1,7 +1,7 @@
 import React from "react"
 import BgImage from "@/components/BgImage"
 import Image from "next/image"
-import MainPhoneBlock from "@/public/images/MainPhoneBLock2.svg"
+import MainPhoneBlock from "@/public/images/MainPhoneBLock2.png"
 import ScrollingImage from "@/components/SecondBlock/ScrollingImage"
 import ScrollingText from "@/components/SecondBlock/ScrollingText"
 
