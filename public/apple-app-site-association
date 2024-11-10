@@ -1,20 +1,29 @@
 {
   "applinks": {
-    "apps": [],
     "details": [
       {
-        "appID": "B2Y384F77B.app.maestri",
-        "paths": [
-          "/clients/invite*",
-          "/employees/invite*",
-          "/salons*"
+        "appIDs": [ "B2Y384F77B.app.maestri" ],
+        "components": [
+          {
+            "/": "/clients/invite",
+            "?": { "id": "*" },
+            "comment": "Matches any URL with path /clients/invite and any 'id' query parameter."
+          },
+          {
+            "/": "/employees/invite",
+            "?": { "id": "*" },
+            "comment": "Matches any URL with path /employees/invite and any 'id' query parameter."
+          },
+          {
+            "/": "/salons",
+            "?": { "id": "*" },
+            "comment": "Matches any URL with path /salons and any 'id' query parameter."
+          }
         ]
       }
     ]
   },
   "appclips": {
-    "apps": [
-      "B2Y384F77B.app.maestri.clip"
-    ]
+    "apps": [ "B2Y384F77B.app.maestri.clip" ]
   }
 }
