@@ -5,8 +5,9 @@
       {
         "appID": "B2Y384F77B.app.maestri",
         "paths": [
-          "/clients/invite*",
-          "/employees/id*"
+           "/clients/invite*",
+           "/employees/invite*",
+           "/salons*"
         ]
       }
     ]
