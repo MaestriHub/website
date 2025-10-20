@@ -68,7 +68,7 @@ const ClientInvite = () => {
             <button
               onClick={() =>
                 router.push(
-                  "https://apps.apple.com/ru/app/maestri/id6469101735"
+                  "https://apps.apple.com/ru/app/maetry/id6469101735"
                 )
               }
               className="mt-[1vh]"

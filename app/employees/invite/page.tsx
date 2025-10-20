@@ -13,6 +13,13 @@ import phones from "@/public/images/phones_customer.png"
 const ClientInvite = () => {
   const router = useRouter()
 
+  const handleCopy = async () => {
+    const textToCopy = window.location.href // Получаем текущий URL
+    try {
+      await navigator.clipboard.writeText(textToCopy)
+    }
+  }
+
   return (
     <div>
       <header
@@ -67,8 +74,9 @@ const ClientInvite = () => {
 
             <button
               onClick={() =>
+                handleCopy()
                 router.push(
-                  "https://apps.apple.com/ru/app/maestri/id6469101735"
+                  "https://apps.apple.com/ru/app/maetry/id6469101735"
                 )
               }
               className="mt-[1vh]"

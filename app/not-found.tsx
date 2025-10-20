@@ -15,7 +15,7 @@ const NotFound = () => {
           <TextFabric id={2} text={"go to the main page"}></TextFabric>
         </Link>
         <Link
-          href="https://apps.apple.com/ru/app/maestri/id6469101735"
+          href="https://apps.apple.com/ru/app/maetry/id6469101735"
           className="dark:text-white text-black border w-full xl:w-[20vw] py-[2.5vh] rounded-[21px] flex justify-center items-center"
         >
           <div className={styles.gradient__text}>

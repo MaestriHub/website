@@ -22,7 +22,7 @@ export const MobileNav = () => {
         </Link>
 
         <div className="flex gap-x-4 mt-[10%]">
-          <Link href="mailto:support@maestri.me">
+          <Link href="mailto:support@maetry.com">
             <Image
               src={Mail}
               alt={""}
@@ -40,7 +40,7 @@ export const MobileNav = () => {
               className="dark:invert"
             />
           </Link>
-          <Link href={"https://instagram.com/maestri.app"}>
+          <Link href={"https://instagram.com/maetry"}>
             <Image
               src={Instagram}
               alt={""}
